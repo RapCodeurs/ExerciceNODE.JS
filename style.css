@@ -1,0 +1,26 @@
+h1 {
+    background-image: linear-gradient(yellow, blue);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: glowing 2s ease-in-out infinite;
+}
+  
+@keyframes glowing {
+    0% {background-position: 0 0;}
+    50% {background-position: 400% 0;}
+    100% {background-position: 0 0;}
+  }
+
+.animated-element {
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+    cursor: pointer;
+    animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+    0% {transform: rotate(0deg);}
+    50% {transform: rotate(360deg);}
+}
